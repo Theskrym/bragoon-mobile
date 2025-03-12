@@ -23,6 +23,25 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "expo": {
+      "assetBundlePatterns": [
+        "**/*"
+      ],
+      "packagerOpts": {
+        "config": "metro.config.js",
+        "sourceExts": [
+          "js",
+          "jsx",
+          "json",
+          "ts",
+          "tsx",
+          "csv"
+        ]
+      }
+    },
+    "plugins": [
+      "expo-asset"
+    ]
   }
 }
